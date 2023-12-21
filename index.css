@@ -1,0 +1,1513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+    /* color: white; */
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#name {
+    text-transform: uppercase;
+    font-size: 3.4vh;
+
+}
+
+header {
+    color: white;
+    background-color: #373543;
+    /* background-color: red; */
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav {
+
+    padding: 1vw;
+    font-size: 19px;
+    position: relative;
+    right: 6vw;
+    /* background-color: cadetblue; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        height: 20px;
+        position: relative;
+        /* border-bottom: 2px solid */
+    }
+
+    h5::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: .3vh;
+        width: 0;
+        background-color: #0ebac5;
+        transition: all ease .5s;
+    }
+
+    h5:hover::after {
+        width: 100%;
+        font-weight: 900;
+    }
+}
+
+#nav h5 {
+
+    cursor: pointer;
+    font-weight: 100;
+}
+
+/* #nav h5:hover{
+    box-shadow: -10px -10px 50px 2px white;
+} */
+#icon {
+    gap: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    /* background-color: blue; */
+}
+
+#icon svg {
+
+    cursor: pointer;
+    fill: white;
+    height: 3vh;
+
+}
+
+section {
+    position: relative;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    width: 100%;
+    background-color: #373543;
+}
+
+#gola {
+    box-shadow: 0px 0px 100px -30px #1ef;
+    height: 500px;
+    width: 500px;
+    background-color: #292733;
+    border-radius: 50%;
+}
+
+#text {
+    margin: 0 7vw;
+    display: flex;
+    /* justify-content: space-between; */
+    color: white;
+    /* font-size: 30px; */
+    padding-top: 15vh;
+    position: absolute;
+
+}
+
+#textleft {
+    width: 50%;
+}
+
+#textleft h3 {
+    font-weight: 200;
+}
+
+#textright {
+
+    padding: 0px 0px 0px 15vw;
+    width: 60%;
+
+    /* border: 2px solid black; */
+    .gola1 {
+        cursor: pointer;
+        transition: all ease 2s;
+    }
+
+     .gola1:hover {
+        scale: 1.2;
+        transition: all ease 2s;
+    } 
+
+    #icon1 a {
+        text-decoration: none;
+        color: #1ef;
+    }
+
+}
+
+
+
+#text h3 {
+    font-size: 10vh;
+}
+
+#text h2 {
+    font-size: 12vh;
+    margin-top: 2vh;
+}
+
+#underline {
+    border-radius: 10px;
+    margin-top: 3vh;
+    height: 3px;
+    width: 200px;
+    background-color: #1ef;
+}
+
+#textleft p {
+    padding-top: 3vh;
+    text-align: justify;
+    line-height: 4vh;
+    width: 25vw;
+}
+
+#textright h6 {
+    font-weight: 100;
+    font-size: 3vh;
+}
+
+#textright h5 {
+    /* width: 100px; */
+    margin-right: 8vw;
+    margin-top: 2vh;
+    text-align: justify;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+#textright p {
+    margin-top: 20px;
+    color: #1ef;
+
+}
+
+#image {
+    bottom: 30px;
+    position: absolute;
+
+
+}
+
+#image img {
+    /* z-index: -33; */
+    height: 55vh;
+    filter: drop-shadow(0px 0px 1px #1ef);
+}
+
+/* bar  se karna hai */
+#bar {
+    height: 100px;
+    width: 90%;
+    bottom: -40px;
+    background-color: #373543;
+    position: absolute;
+    box-shadow: -10px 0px 100px -20px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box {
+    height: 50px;
+    width: 150px;
+    background-color: #292733;
+}
+
+.gola1 {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #3c3a46;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 1px #1ef);
+
+}
+
+#icon1 {
+
+    padding-top: 20px;
+    gap: 20px;
+    font-size: 20px;
+    display: flex;
+    color: #1ef;
+}
+
+
+#textright p span {
+    /* font-weight: 800; */
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+#page2 {
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: #1d1b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page2left {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    flex-direction: column;
+}
+
+#page2right {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid blue; */
+
+}
+
+#page2left h2 {
+    width: 80%;
+    font-size: 48px;
+    white-space: wrap;
+}
+
+#page2left p {
+    width: 70%;
+    line-height: 30px;
+    /* font-size: 40px; */
+    margin-top: 25px;
+}
+
+#box2 {
+    margin-top: 40px;
+    height: 200px;
+    width: 400px;
+    /* border: 2px solid #1ef; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+#box2 h4 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    height: 40px;
+    color: #1ef;
+    width: 50%;
+    /* border: 2px solid red; */
+    font-size: 40px;
+}
+
+#box2 h4 p {
+    position: absolute;
+    top: 20px;
+    font-size: 14px;
+
+}
+
+#box2 h4 div {
+    position: absolute;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+#page2right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+#page2right #box3 {
+    width: 650px;
+    /* border: 2px solid #1ef; */
+    height: 150px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2right #box3 img {
+    height: 100px;
+    margin-right: 20px;
+    /* border: 2px solid red; */
+
+}
+
+#page2right #box3 .img {
+    position: relative;
+    right: 28px;
+}
+
+#page2right #box3 h4 {
+    /* border: 2px solid black; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+#page2right #box3 #box4 h4 {
+    padding-bottom: 5px;
+}
+
+#page2right #box3 #box4 p {
+    font-size: 13px;
+    /* border: 2px solid gray; */
+}
+
+#page2right #box3 #box4 #h4,
+#p {
+    position: relative;
+    right: 25px;
+}
+
+#page2right span {
+    /* border: 2px solid green; */
+    position: absolute;
+    left: 95%;
+    font-size: 20px;
+    font-weight: 900;
+    color: #1ef;
+}
+
+/* page 3 yha se start hai  */
+#page3 {
+    height: 50%;
+    width: 100%;
+    background-color: #373543;
+    position: relative;
+}
+
+#page3 #projects .proj:hover {
+    scale: 1.2;
+    transition: all ease 3s;
+}
+
+#page3 #projects .proj1:hover {
+    scale: 1.2;
+    transition: all ease 3s;
+}
+
+#page3 #projects .proj2:hover {
+    scale: 1.2;
+    transition: all ease 3s;
+}
+
+#projects {
+    height: 500px;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: -30px;
+}
+
+.proj {
+        
+        transition: all ease 3s;
+        padding: 50px;
+        height: 300px;
+        width: 300px;
+        background-color: #3c3a46;
+      
+    }
+
+    
+
+
+.proj1 {
+
+    transition: all ease 3s;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: #3c3a46;
+ 
+}
+
+.proj2 {
+
+    transition: all ease 3s;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: #3c3a46;
+ 
+}
+
+#gola2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #1ef;
+    background-color: #292733;
+    /* background-color: red; */
+}
+
+#page3 #projects .proj #h4 {
+    height: 20px;
+    color: white;
+    /* border: 2px solid green; */
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#page3 #projects .proj #p {
+    color: white;
+    width: 250px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 50px 0px 0px 23px;
+    font-size: 13px;
+    /* border: 2px solid red; */
+}
+
+#page3 #projects .proj1 #h4 {
+    height: 20px;
+    color: white;
+    /* border: 2px solid green; */
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#page3 #projects .proj1 #p {
+    color: white;
+    width: 250px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 50px 0px 0px 23px;
+    font-size: 13px;
+    /* border: 2px solid red; */
+}
+
+#page3 #projects .proj2 #h4 {
+    height: 20px;
+    color: white;
+    /* border: 2px solid green; */
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#page3 #projects .proj2 #p {
+    color: white;
+    width: 250px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 50px 0px 0px 23px;
+    cursor: text;
+    font-size: 13px;
+    /* border: 2px solid red; */
+}
+
+
+/* yha se page 4 start hai  */
+
+
+#page4 {
+    height: 120%;
+    width: 100%;
+    background-color: #373543;
+
+}
+
+#container {
+    /* border: 2px solid green; */
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* padding: 24px; */
+
+
+}
+
+#page4 #h4 {
+
+    /* padding-left: 220px; */
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+#page4 #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+#page4 #btn {
+    color: #1ef;
+    border: 2px solid #1ef;
+    box-shadow: 0px 0px 5px 2px #1ef;
+    background-color: #1d1b27;
+    padding: 10px;
+    width: 124px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+#container #box {
+    margin: 10px;
+    gap: 10px;
+    padding: 25px 0px 0px 25px;
+    color: white;
+    width: 450px;
+    height: 270px;
+    background-color: #1d1b27;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+#container #box h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#container #box img {
+    border-top-left-radius: 20px;
+    /* width: 500250 */
+}
+
+/* page 5 yha se start hai  */
+
+
+#page5 {
+
+    height: 50%;
+    width: 100%;
+    background-color: #1d1b27;
+    display: flex;
+}
+
+#page5 #left,
+#right {
+    padding: 34px;
+    color: white;
+    /* margin: 25px; */
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+
+#page5 #btncont {
+    display: flex;
+    gap: 30px;
+}
+
+#page5 #btn1 {
+    cursor: pointer;
+    height: 20px;
+    width: 80px;
+    border: 2px solid #1ef;
+    position: relative;
+
+}
+
+#page5 #btn2 {
+    cursor: pointer;
+    height: 20px;
+    width: 80px;
+    background-color: #1ef;
+    color: black;
+    font-weight: 700;
+    /* border: 2px solid green; */
+}
+
+#page5 #left {
+    padding-left: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+}
+
+#page5 #left h3 {
+    width: 80%;
+    font-size: 40px;
+}
+
+#page5 #left p {
+    cursor: text;
+    text-align: justify;
+    width: 60%;
+    /* font-size: 40px; */
+
+}
+
+#page5 #left #btncont div {
+    font-size: 12px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+
+
+}
+
+#circle {
+    height: 320px;
+    width: 320px;
+    border-radius: 100%;
+    background-color: #3c3a46;
+}
+
+#page5 #right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page5 #right img {
+    filter: drop-shadow(0px 0px 1px #1ef);
+    position: absolute;
+    bottom: 0;
+    height: 55vh;
+}
+
+#page5 #btncont a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 100%;
+    color: white;
+    background-color: #3c3a46;
+    height: 300px;
+
+    #arrow a {
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+    }
+
+}
+
+#footer div {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#footer h3,
+#para {
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    #nav {
+        display: none;
+
+
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+
+
+        #icon {
+            position: relative;
+            right: 30px;
+            gap: 20px;
+        }
+
+    }
+
+    #name {
+        position: relative;
+        left: 10px;
+        font-weight: 400;
+        filter: drop-shadow(0px 0px 2px #1ef);
+    }
+
+    section {
+
+        /* padding: 4vw; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
+        min-height: 100vh;
+        background-color: #373543;
+        /* border: 2px solid red; */
+        padding: 0;
+        margin: 0;
+    }
+
+    #gola {
+        position: absolute;
+        bottom: 0vh;
+        border: 2px solid white;
+        box-shadow: 0px 0px 100px -30px #1ef;
+        height: 270px;
+        width: 270px;
+        background-color: #292733;
+        border-radius: 50%;
+        animation: animate 2s infinite alternate;
+    }
+    @keyframes animate{
+        100%{
+            box-shadow:0px 0px 100px -30px rgb(21, 78, 78);
+        }
+    }
+
+    #text {
+        position: absolute;
+        top: 0px;
+        flex-direction: column;
+        /* border: 2px solid yellow; */
+        padding-top: 0px;
+        /* margin: 0 0px; */
+        display: flex;
+        /* justify-content: space-between; */
+        color: white;
+
+
+    }
+
+    #textleft {
+        /* padding-bottom: -34px; */
+        /* margin-bottom: 34px; */
+        /* border: 2px solid green; */
+        width: 100%;
+    }
+
+    #textleft h3 {
+        font-weight: 400;
+    }
+
+    #textright {
+        position: relative;
+        right: 60px;
+        top: 30px;
+        /* margin-bottom: 30px; */
+        /* border: 2px solid red; */
+        /* padding: 0px 0px 0px 0vw; */
+        width: 100%;
+
+       
+    }
+
+    #text h3 {
+        padding-top: 1vh;
+        font-size: 4vh;
+    }
+
+    #text h2 {
+        font-size: 5vh;
+        margin-top: 2vh;
+    }
+
+    #underline {
+        border-radius: 10px;
+        margin-top: 3vh;
+        height: 3px;
+        width: 150px;
+        background-color: yellow;
+    }
+
+    #textleft p {
+        padding-top: 2vh;
+        text-align: justify;
+        line-height: 4vh;
+        width: 90vw;
+    }
+
+    #textright h6 {
+        font-weight: 100;
+        font-size: 3vh;
+    }
+
+    #textright h5 {
+        /* width: 100px; */
+        margin-right: 8vw;
+        margin-top: 2vh;
+        text-align: justify;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+    #textright p {
+        font-weight: 400;
+        margin-top: 20px;
+        color: #1ef;
+    }
+
+    #image {
+        /* margin-top: 34px; */
+        bottom: 30px;
+        position: absolute;
+
+
+    }
+
+    #image img {
+        /* border: 2px solid red;    */
+        position: absolute;
+        bottom: -2vh;
+        height: 30vh;
+        left: 10px;
+        filter: drop-shadow(0px 0px 1px #1ef);
+    }
+
+    /* bar  se karna hai */
+
+    #bar {
+
+        height: 30px;
+        width: 100%;
+        bottom: 0vh;
+        background-color: #373543;
+        position: absolute;
+        box-shadow: -10px 0px 100px -20px black;
+        display: flex;
+
+
+    }
+
+    .box {
+        height: 10px;
+        width: 30px;
+        background-color: #292733;
+    }
+
+    .gola1 {
+        height: 40px;
+        width: 40px;
+        background-color: #1f1d27;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 2gpx #1ef);
+    }
+  
+
+    #icon1 {
+
+        padding-top: 20px;
+        gap: 20px;
+        font-size: 20px;
+        display: flex;
+        color: #1ef;
+    }
+
+    #textright p span {
+        /* font-weight: 800; */
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    #page2 {
+        overflow: hidden;
+        color: white;
+        min-height: 130vh;
+        /* width: 100%; */
+        background-color: #1d1b27;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #page2left {
+        /* border: 2px solid red; */
+        /* margin-top: 0vh; */
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+
+    #page2right {
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid blue; */
+
+    }
+
+    #page2left h2 {
+
+        margin-top: 0vh;
+        width: 100%;
+        font-size: 5vh;
+        white-space: wrap;
+        /* border: 2px solid blue; */
+    }
+
+    #page2left p {
+        width: 100%;
+        line-height: 4vh;
+        margin-top: 10px;
+        font-size: 3vh;
+        /* border: 2px solid red; */
+    }
+
+    #page2 #box2 {
+        margin-top: 20px;
+        height: 90px;
+        width: 300px;
+        /* border: 2px solid #1ef; */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 0;
+
+    }
+
+    #box2 h4 {
+        /* display: flex; */
+        flex-wrap: wrap;
+        height: 100px;
+        width: 40%;
+        padding-top: 20px;
+        color: #1ef;
+        /* border: 2px solid red; */
+        font-size: 5vh;
+
+    }
+
+    #box2 h4 p {
+        position: absolute;
+        top: 50px;
+        font-size: 13px;
+
+    }
+
+    #box2 h4 div {
+        position: absolute;
+        top: 170px;
+        font-size: 13px;
+    }
+
+    #page2right {
+
+        flex-direction: column;
+        /* margin-top: 20vh; */
+        position: relative;
+        right: 0%;
+        /* border: 2px solid green; */
+
+    }
+
+    #page2right #box3 {
+        width: 450px;
+        /* border: 2px solid #1ef; */
+        height: 150px;
+        /* padding: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #page2right #box3 img {
+        height: 100px;
+        margin-right: 10px;
+        /* border: 2px solid red; */
+
+    }
+
+    #page2right #box3 .img {
+        position: relative;
+        right: 0px;
+    }
+
+    #page2right #box3 h4 {
+        /* border: 2px solid black; */
+        flex-direction: column;
+        /* border: 2px solid red; */
+    }
+
+    #page2right #box3 #box4 h4 {
+        padding-bottom: 5px;
+        width: 200px;
+    }
+
+    #page2right #box3 #box4 p {
+        font-size: 13px;
+        /* border: 2px solid gray; */
+    }
+
+    #page2right #box3 #box4 #h4,
+    #p {
+        position: relative;
+        right: 0px;
+    }
+
+    #page2right span {
+        /* border: 2px solid green; */
+        position: absolute;
+        left: 90%;
+        font-size: 20px;
+        font-weight: 900;
+        color: #1ef;
+    }
+
+    /* page 3 yha se start hai  */
+
+    #page3 {
+        overflow: hidden;
+        min-height: 112vh;
+        background-color: #403e4d;
+        position: relative;
+        /* margin-top: 100px; */
+    }
+
+    #projects {
+        padding-top: 60vh;
+        height: 500px;
+        width: 100%;
+        /* background-color: cadetblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    #page3 #projects .proj:hover {
+        scale: 1;
+    }
+    #page3 #projects .proj1:hover {
+        scale: 1;
+    }
+    #page3 #projects .proj2:hover {
+        scale: 1;
+    }
+
+    .proj {
+        /* border: 2px solid red; */
+        padding: 20px;
+        height: 300px;
+        width: 350px;
+        background-color: #3c3a46;
+        background-color: #3c3a46;
+        border-top: 2px solid #e74c3c;
+        border-right: 2px solid #27ae60;
+        border-bottom: 2px solid #f39c12;
+        border-left: 2px solid #2980b9;
+        border-radius: 10px;
+        animation: borderAnimation 2s infinite alternate;
+    }
+
+    @keyframes borderAnimation {
+        0% {
+            border-top-color: #e74c3c;
+            border-right-color: #27ae60;
+            border-bottom-color: #f39c12;
+            border-left-color: #2980b9;
+        }
+        25%{
+            
+            border-top-color: #1e5f89c0;
+            border-right-color: #e7571a;
+            border-bottom-color: #0fdff2;
+            border-left-color: #7e1ca5;
+        }
+        100% {
+            border-top-color: #3498db;
+            border-right-color: #2ecc71;
+            border-bottom-color: #e67e22;
+            border-left-color: #9b59b6;
+        }
+    }
+
+    .proj1 {
+        /* border: 2px solid red; */
+        padding: 20px;
+        height: 300px;
+        width: 350px;
+        background-color: #3c3a46;
+        border-top: 2px solid #e74c3c;
+        border-right: 2px solid #27ae60;
+        border-bottom: 2px solid #f39c12;
+        border-left: 2px solid #2980b9;
+        border-radius: 10px;
+        animation: borderAnimation 2s infinite alternate;
+    }
+
+    .proj2 {
+        /* border: 2px solid red; */
+        padding: 20px;
+        height: 300px;
+        width: 350px;
+        background-color: #3c3a46;
+        border-top: 2px solid #e74c3c;
+        border-right: 2px solid #27ae60;
+        border-bottom: 2px solid #f39c12;
+        border-left: 2px solid #2980b9;
+        border-radius: 10px;
+        animation: borderAnimation 2s infinite alternate;
+    }
+
+    #gola2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        color: #1ef;
+        background-color: #292733;
+        /* background-color: red; */
+    }
+
+    #page3 #projects .proj #h4 {
+        height: 20px;
+        color: white;
+        /* border: 2px solid green; */
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #page3 #projects .proj #p {
+        color: white;
+        width: 230px;
+        line-height: 20px;
+        text-align: start;
+        padding: 50px 0px 0px 0px;
+        /* border: 2px solid red; */
+    }
+
+    #page3 #projects .proj1 #h4 {
+        height: 20px;
+        color: white;
+        /* border: 2px solid green; */
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #page3 #projects .proj1 #p {
+        color: white;
+        width: 230px;
+        line-height: 20px;
+        text-align: justify;
+        padding: 50px 0px 0px 0px;
+        /* border: 2px solid red; */
+    }
+
+    #page3 #projects .proj2 #h4 {
+        height: 20px;
+        color: white;
+        /* border: 2px solid green; */
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #page3 #projects .proj2 #p {
+        color: white;
+        width: 230px;
+        line-height: 20px;
+        text-align: justify;
+        padding: 50px 0px 0px 0px;
+        /* border: 2px solid red; */
+    }
+
+    /* yha se page4 start hai  */
+
+    #page4 {
+        /* border: 2px solid red; */
+        min-height: 165vh;
+        background-color: #26242f;
+
+    }
+
+    #container {
+        /* border: 2px solid green; */
+        padding-top: 0px;
+        height: 146vh;  
+        width: 350px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        /* padding: 24px; */
+
+
+    }
+
+    #page4 #h4 {
+        display: flex;
+        justify-content: center;
+        /* padding-left: 220px; */
+        font-size: 40px;
+        color: #1ef;
+    }
+
+    #page4 #button {
+        /* padding-top: 90px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+    }
+
+    #page4 #btn {
+        color: #1ef;
+        border: 2px solid #1ef;
+        background-color: #1d1b27;
+        padding: 10px;
+        width: 124px;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
+
+    #container #box {
+        margin: 10px;
+        gap: 34px;
+        /* padding: 25px 0px 0px 25px; */
+        color: white;
+        width: 450px;
+        height: 270px;
+        background-color: #1d1b27;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #container #box h4 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    #container #box img {
+        border-top-left-radius: 20px;
+        /* width: 500250 */
+    }
+
+    /* page 5 yha se start hai  */
+
+    #page5 {
+        overflow: hidden;
+        min-height: 100%;
+        /* width: 100vw; */
+        background-color: #1d1b27;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page5 #left {
+        padding: 34px;
+        color: white;
+        /* margin: 25px; */
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    #page5 #right {
+        width: 100%;
+
+    }
+
+    #page5 #btncont {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 30px;
+    }
+
+    #page5 #btn1 {
+        /* border: 2px solid red; */
+        cursor: pointer;
+        height: 10px;
+        width: 80px;
+        border: 2px solid #1ef;
+        position: relative;
+
+    }
+
+    #page5 #btn2 {
+
+        /* border: 2px solid red; */
+        cursor: pointer;
+        height: 20px;
+        width: 80px;
+        background-color: #1ef;
+        color: black;
+        font-weight: 700;
+        /* border: 2px solid green; */
+    }
+
+    #page5 #left {
+        /* border: 2px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+
+    }
+
+    #page5 #left h3 {
+        /* border: 2px solid red; */
+        width: 400px;
+        font-size: 40px;
+    }
+
+    #page5 #left p {
+        /* border: 2px solid red; */
+        cursor: text;
+        text-align: justify;
+        width: 300px;
+        /* font-size: 40px; */
+
+    }
+
+    #page5 #left #btncont div {
+        font-size: 12px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100px;
+
+
+    }
+
+    #circle {
+        /* border: 3px solid red; */
+        bottom: 0;
+        right: 50px;
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        background-color: #3c3a46;
+        box-shadow: 0px 0px 5px 2px #1ef;
+    }
+
+
+
+    #page5 #right img {
+        filter: drop-shadow(0px 0px 1px #1ef);
+        position: absolute;
+        height: 45vh;
+        bottom: 0;
+        right: 40px;
+        /* border: 2px solid red; */
+    }
+
+    #page5 #btncont a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #footer {
+        overflow: hidden;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        width: 100%;
+        color: white;
+        background-color: #3c3a46;
+        min-height: 300px;
+        position: relative;
+
+        #info a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    #footer div {
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #footer h3,
+    #para {
+        cursor: pointer;
+
+    }
+
+    #arrow a {
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+    }
+
+    #arrow {
+        position: absolute;
+        bottom: -10px;
+    }
+}
